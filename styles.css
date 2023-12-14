@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #74ebd5, #acb6e5);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checklist-container {
+    position: relative;
+    width: 80%;
+    max-width: 400px;
+    background: linear-gradient(to bottom right, #8a3ab9, #6d36c7);
+    border-radius: 20px;
+    margin: 50px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+}
+
+.reset-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#resetButton {
+    padding: 10px;
+    background: radial-gradient(circle, #ff0080, #ff00cc);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    line-height: 1;
+}
+
+.reset-button:hover {
+    background: radial-gradient(circle, #ff33cc, #ff66ff);
+}
+
+.input-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+input {
+    flex: 1;
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.add-button {
+    margin-top: 10px;
+    margin-left: 10px; /* Sposta il bottone a destra */
+    padding: 10px;
+    background: radial-gradient(circle, #ff0080, #ff00cc);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.add-button:hover {
+    background: radial-gradient(circle, #ff33cc, #ff66ff);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.completed-screen {
+    text-align: center;
+    color: #333;
+    display: none;
+}
+
+.completed-screen h2 {
+    color: #333;
+}
+
+.completed-screen p {
+    color: #666;
+    margin-top: 10px;
+}
+
+.completed-screen button {
+    padding: 10px;
+    background: radial-gradient(circle, #ff0080, #ff00cc);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.completed-screen button:hover {
+    background: radial-gradient(circle, #ff33cc, #ff66ff);
+}
+
+
+.completed {
+    text-decoration: line-through;
+    color: #999; /* Cambia il colore del testo completato, se desideri */
+    
+}
+
+.completed-screen .delete-button {
+    display: none;
+}
+
+.delete-icon {
+  float: right; 
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+}
